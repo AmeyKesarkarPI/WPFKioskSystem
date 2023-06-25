@@ -1,0 +1,106 @@
+﻿<Window x:Class="KioskSystemAgent.OptionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KioskSystemAgent"
+        mc:Ignorable="d"
+        Title="OptionWindow" Height="450" Width="800"
+        WindowState="Maximized"
+        WindowStyle="None">
+    <Grid>
+
+        <StackPanel Orientation="Vertical"
+                    x:Name="DynamicOptions"
+                    Height="400"
+                    Width="700">
+            <Button x:Name="GetCustomerInfo"
+                    Height="50"
+                    Width="300"
+                    Content="Get Customer Information"
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    FontWeight="Bold"
+                    Background="BlanchedAlmond"
+                    BorderBrush="BurlyWood"
+                    BorderThickness="2"
+                    Margin="20"
+                    Click="GetCustomer">
+
+            </Button>
+            <Button x:Name="MarkServing"
+                    Height="50"
+                    Width="300"
+                    Content="Mark in Serving"
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    FontWeight="Bold"
+                    Background="BlanchedAlmond"
+                    BorderBrush="BurlyWood"
+                    BorderThickness="2"
+                    Margin="20"
+                    Click="Serving">
+
+            </Button>
+            <Button x:Name="MarkServed"
+                    Height="50"
+                    Width="300"
+                    Content="Mark Served"
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    FontWeight="Bold"
+                    Background="BlanchedAlmond"
+                    BorderBrush="BurlyWood"
+                    BorderThickness="2"
+                    Margin="20"
+                    Click="Served">
+
+            </Button>
+
+
+            <StackPanel x:Name="Controls"
+                    Height="50"
+                    Margin="0,30,0,0">
+
+                <Button Height="50"
+                        Width="150"
+                        Content="Exit"
+                        FontWeight="Bold"
+                        Margin="0,0,10,0"
+                        FontSize="30"
+                        Background="Red"
+                        Click="Exit">
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+
+
+        
+        <!--<StackPanel x:Name="Controls"
+                        Height="50"
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+
+            <Button Height="50"
+                        Width="150"
+                        Content="Back"
+                        FontWeight="Bold"
+                        Margin="0,0,10,0"
+                        FontSize="30"
+                        Background="BlueViolet"
+                        Click="Back">
+            </Button>
+
+            <Button Height="50"
+                        Width="150"
+                        Content="Save"
+                        FontWeight="Bold"
+                        Margin="0,0,10,0"
+                        FontSize="30"
+                        Background="ForestGreen"
+                        Click="Save">
+            </Button>
+        </StackPanel>-->
+    </Grid>
+</Window>

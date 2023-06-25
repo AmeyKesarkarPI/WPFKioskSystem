@@ -1,0 +1,64 @@
+﻿<Window x:Class="KioskSystemAdmin.CompanyCreationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KioskSystemAdmin"
+        mc:Ignorable="d"
+        Title="CompanyCreationWindow" Height="450" Width="800"
+        WindowState="Maximized"
+        WindowStyle="None">
+    <Grid>
+        <StackPanel x:Name="Service"
+                    Orientation="Vertical"
+                    Height="400"
+                    Width="500">
+            <StackPanel Orientation="Horizontal"
+                        Margin="10">
+                <Label Height="40"
+                       Width="200"
+                       Margin="0,0,10,0"
+                       FontWeight="Bold"
+                       FontSize="25"
+                       Content="Comapny Name:">
+                </Label>
+                <TextBox Height="40"
+                         Width="200"
+                         Margin="0,0,10,0"
+                         FontWeight="Bold"
+                         FontSize="25"
+                         BorderBrush="Gray"
+                         TextWrapping="Wrap"
+                         x:Name ="CompanyName">
+                </TextBox>
+
+            </StackPanel>
+
+            <StackPanel x:Name="Controls"
+                    Height="50"
+                    Margin="0,40,0,0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+
+                <Button Height="50"
+                        Width="150"
+                        Content="Back"
+                        FontWeight="Bold"
+                        Margin="0,0,10,0"
+                        FontSize="30"
+                        Background="BlueViolet"
+                        Click="Back">
+                </Button>
+                <Button Height="50"
+                        Width="150"
+                        Content="Submit"
+                        FontWeight="Bold"
+                        Margin="0,0,10,0"
+                        FontSize="30"
+                        Background="ForestGreen"
+                        Click="Submit">
+                </Button>
+            </StackPanel>
+        </StackPanel>        
+    </Grid>
+</Window>
